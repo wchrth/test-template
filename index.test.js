@@ -1,4 +1,13 @@
-const f = arr => {};
+const f = arr => {
+  let result = arr.length
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > arr[i + 1]) {
+      result = i
+      break
+    }
+  }
+  return result
+};
 
 describe("sorting", () => {
   it("(╯°□°）╯︵ ┻━┻", () => {
